@@ -41,6 +41,25 @@ public class QuestionService {
                 score++;
             }
         }
-        System.out.println("Your score is : " + score);
+        switch (score) {
+            case 5:
+                System.out.println("Damn you are on a streak!!");
+                break;
+            case 4:
+                System.out.println("Okay! You got 4 right");
+                break;
+            case 3:
+                System.out.println("Not bad!");
+                break;
+            case 2:
+                System.out.println("Need work to put in you got 2 right !?");
+                break;
+            case 1:
+                System.out.println("This was a fluke");
+                break;
+            default:
+                System.out.println("C'mon dude! Really ?");
+                break;
+        }
     }
 }
